@@ -1,8 +1,4 @@
-// Mostrar conteúdo após o carregamento do loader
-window.addEventListener('load', () => {
-    const loader = document.getElementById('loader');
-    const content = document.getElementById('content');
-    
-    loader.style.display = 'none';
-    content.classList.remove('hidden');
+// Exemplo para futuras interações
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('Script carregado com sucesso!');
 });
