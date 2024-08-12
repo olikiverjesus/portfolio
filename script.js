@@ -1,9 +1,8 @@
-window.addEventListener('load', function () {
+// Mostrar conteúdo após o carregamento do loader
+window.addEventListener('load', () => {
     const loader = document.getElementById('loader');
     const content = document.getElementById('content');
-
-    setTimeout(function () {
-        loader.style.display = 'none';
-        content.classList.remove('hidden');
-    }, 1500);
+    
+    loader.style.display = 'none';
+    content.classList.remove('hidden');
 });
