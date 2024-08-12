@@ -128,6 +128,20 @@ main {
     text-decoration: underline;
 }
 
+.language-list {
+    list-style: none;
+    padding: 0;
+}
+
+.language-list li {
+    background: #4a90e2;
+    color: #fff;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
 footer {
     background: #4a90e2;
     color: #fff;
