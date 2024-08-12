@@ -151,3 +151,36 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Garantir que a altura da página seja 100% da tela */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* O conteúdo principal ocupará o espaço disponível */
+main {
+    flex: 1;
+    padding: 2rem 0;
+}
+
+/* Footer na parte inferior da página */
+footer {
+    background: #4a90e2;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
