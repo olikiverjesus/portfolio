@@ -1,78 +1,77 @@
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+/* Basic resets */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #333;
+    background: #333;
     color: #fff;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
-    margin: 0;
+    margin-bottom: 10px;
     font-size: 2.5em;
 }
 
 header p {
     font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-nav ul li a {
+nav a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    color: #ccc;
 }
 
 section {
-    padding: 20px;
-    margin: 20px 0;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
 }
 
-section h2 {
+h2 {
     color: #333;
+    margin-bottom: 20px;
+    font-size: 2em;
     border-bottom: 2px solid #333;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
-.experience-item {
-    background-color: #fff;
-    padding: 15px;
-    border: 1px solid #ddd;
-    margin-bottom: 15px;
-    border-radius: 5px;
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
 }
 
 footer {
-    background-color: #333;
+    background: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
+    padding: 20px 0;
+    position: relative;
     width: 100%;
 }
 
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
 footer p {
-    margin: 5px 0;
+    margin: 0;
 }
