@@ -98,6 +98,20 @@ section p {
     margin-bottom: 10px;
 }
 
+/* Habilidades */
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.skill i {
+    margin-right: 10px;
+}
+
 /* Rodapé */
 footer {
     text-align: center;
