@@ -89,14 +89,6 @@ section p {
     margin: 0 auto;
 }
 
-/* Efeito Parallax */
-.parallax {
-    background-color: #f4f4f4;
-    height: 500px;
-    text-align: center;
-    padding: 100px 0;
-}
-
 /* Experiência */
 .experience ul {
     list-style-type: disc;
@@ -106,21 +98,6 @@ section p {
 
 .experience ul li {
     margin-bottom: 10px;
-}
-
-/* Testemunhos */
-#testimonials {
-    background: #f4f4f4;
-    padding: 60px 0;
-}
-
-.testimonial {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-    text-align: center;
 }
 
 /* Rodapé */
