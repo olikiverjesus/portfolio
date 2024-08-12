@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background: #333;
+    background: #222;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -22,6 +22,7 @@ header {
 header h1 {
     margin-bottom: 10px;
     font-size: 2.5em;
+    color: #f4f4f4;
 }
 
 header p {
@@ -30,14 +31,15 @@ header p {
 }
 
 nav a {
-    color: #fff;
+    color: #f4f4f4;
     text-decoration: none;
     margin: 0 15px;
     font-size: 1.1em;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #ccc;
+    color: #e6e6e6;
 }
 
 section {
@@ -49,7 +51,7 @@ section {
 h2 {
     color: #333;
     margin-bottom: 20px;
-    font-size: 2em;
+    font-size: 2.5em;
     border-bottom: 2px solid #333;
     padding-bottom: 10px;
 }
@@ -63,8 +65,34 @@ ul li {
     border-bottom: 1px solid #ddd;
 }
 
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skill {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.job {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.job h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
 footer {
-    background: #333;
+    background: #222;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -74,4 +102,31 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .skill-list {
+        grid-template-columns: 1fr;
+    }
 }
