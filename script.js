@@ -1,2 +1,9 @@
-// Adicionar qualquer interatividade ou scripts adicionais que queira para o site aqui
-console.log('Portfólio de Olikiver carregado com sucesso!');
+window.addEventListener('load', function () {
+    const loader = document.getElementById('loader');
+    const content = document.getElementById('content');
+
+    setTimeout(function () {
+        loader.style.display = 'none';
+        content.classList.remove('hidden');
+    }, 1500);
+});

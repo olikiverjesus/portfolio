@@ -5,54 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio de Olikiver</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Olikiver Barros</h1>
-            <p>Customer Success Team Leader &amp; Software Developer</p>
-        </div>
-    </header>
+    <!-- Loader Animado -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
 
-    <section class="experience">
-        <h2>Experiência Profissional</h2>
-        <div class="experience-grid">
-            <!-- Exemplo de item de experiência -->
-            <div class="experience-item">
-                <h3>Customer Success Team Leader</h3>
-                <p>Hostinger Brasil, 2024 - Presente</p>
-                <ul>
-                    <li>Liderança de equipe global com 28 especialistas.</li>
-                    <li>Garantir alto nível de satisfação do cliente.</li>
-                    <li>Colaboração com equipe de produto para melhorias.</li>
-                </ul>
+    <div id="content" class="hidden">
+        <!-- Cabeçalho -->
+        <header class="hero">
+            <div class="hero-content">
+                <h1>Portfólio de Olikiver</h1>
+                <p>Bem-vindo ao meu mundo de inovações e soluções em tecnologia!</p>
             </div>
-            <!-- Mais experiências podem ser adicionadas aqui -->
-        </div>
-    </section>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <svg height="30" width="5" class="scroll-arrow">
+                    <line x1="0" y1="0" x2="5" y2="15"></line>
+                    <line x1="5" y1="15" x2="0" y2="30"></line>
+                </svg>
+            </div>
+        </header>
 
-    <section class="skills">
-        <h2>Habilidades</h2>
-        <div class="skills-list">
-            <!-- Exemplo de habilidade -->
-            <div class="skill">
-                <h3>Project Management</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 90%;"></div>
+        <!-- Seções -->
+        <section class="about">
+            <div class="container">
+                <h2>Sobre Mim</h2>
+                <p>Sou um profissional dedicado com ampla experiência em liderança de equipes e otimização de processos. Com uma trajetória sólida na área de Customer Success, tenho foco em aumentar a satisfação do cliente e melhorar a eficiência operacional.</p>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="container">
+                <h2>Minhas Habilidades</h2>
+                <div class="skill-grid">
+                    <div class="skill-item">
+                        <h3>Gestão de Projetos</h3>
+                        <p>Condução de projetos complexos, do planejamento à execução.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Atendimento ao Cliente</h3>
+                        <p>Aumento na satisfação dos clientes em 20% através de estratégias focadas no cliente.</p>
+                    </div>
+                    <!-- Adicione mais habilidades aqui -->
                 </div>
             </div>
-            <!-- Mais habilidades podem ser adicionadas aqui -->
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <p>&copy; 2024 Portfólio de Olikiver</p>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/olikiverdejesusbarros/">LinkedIn</a></li>
-            <li><a href="mailto:olikiversilva@gmail.com">Email</a></li>
-        </ul>
-    </footer>
+        <!-- Contato e Rodapé -->
+        <footer>
+            <div class="footer-container">
+                <p>&copy; 2024 Portfólio de Olikiver</p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/olikiverdejesusbarros/">LinkedIn</a></li>
+                    <li><a href="mailto:olikiversilva@gmail.com">Email</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
