@@ -42,6 +42,7 @@ header {
     padding: 1.5rem 0;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     text-align: center;
+    position: relative;
 }
 
 header h1 {
@@ -246,5 +247,13 @@ footer {
 
     .project, .skill, .languages li {
         padding: 0.5rem;
+    }
+
+    header {
+        padding: 1rem 0;
+    }
+
+    nav ul li {
+        font-size: 1rem;
     }
 }
