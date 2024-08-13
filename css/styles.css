@@ -51,6 +51,12 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a i {
+    margin-right: 0.5rem;
 }
 
 nav ul li a:hover {
@@ -93,12 +99,11 @@ section {
 }
 
 .project h3 {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+    margin-top: 0;
 }
 
 .project a {
-    color: #2980b9;
+    color: #333;
     text-decoration: none;
 }
 
@@ -115,52 +120,43 @@ section {
 }
 
 .skill {
-    background-color: #fff;
+    background: #fff;
     border: 1px solid #ddd;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    flex: 1 1 calc(33% - 2rem);
+    flex: 1 1 200px;
     text-align: center;
-    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.skill:hover {
-    background-color: #f0f0f0;
-    transform: scale(1.05);
+.skill i {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
-/* Botões */
-.btn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+/* Experiência */
+.experience {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.btn:hover {
-    background-color: #2980b9;
-    transform: scale(1.05);
+/* Contato */
+#contato p {
+    font-size: 1.1rem;
 }
 
-/* Links */
-a {
-    transition: color 0.3s ease, text-decoration 0.3s ease;
-}
-
-a:hover, a:focus {
+#contato a {
     color: #2980b9;
+}
+
+#contato a:hover {
     text-decoration: underline;
 }
 
-/* Footer */
+/* Rodapé */
 footer {
     background-color: #333;
     color: #fff;
