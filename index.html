@@ -1,106 +1,135 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio de Olikiver</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header>
-        <div class="container">
+        <div class="header-content">
             <h1>Portfólio de Olikiver</h1>
-            <nav>
-                <ul>
-                    <li><a href="#sobre"><i class="fas fa-user"></i> Sobre Mim</a></li>
-                    <li><a href="#habilidades"><i class="fas fa-cogs"></i> Habilidades</a></li>
-                    <li><a href="#experiencia"><i class="fas fa-briefcase"></i> Experiência</a></li>
-                    <li><a href="#projetos"><i class="fas fa-project-diagram"></i> Projetos</a></li>
-                    <li><a href="#idiomas"><i class="fas fa-globe"></i> Idiomas</a></li>
-                    <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
-                </ul>
-            </nav>
+            <p>Especialista em Customer Success e Desenvolvimento de Software.</p>
         </div>
     </header>
-    
-    <section id="sobre" class="container">
+
+    <!-- Navegação -->
+    <nav>
+        <ul>
+            <li><a href="#about">Sobre Mim</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#experience">Experiência</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção Sobre Mim -->
+    <section id="about">
         <h2>Sobre Mim</h2>
         <p>Sou um profissional com experiência em liderança de equipes e otimização de processos. Com um histórico comprovado na área de Customer Success e Desenvolvimento de Software, foco em oferecer soluções eficazes e melhorar a satisfação do cliente.</p>
     </section>
-    
-    <section id="habilidades" class="container">
+
+    <!-- Seção Habilidades -->
+    <section id="skills">
         <h2>Minhas Habilidades</h2>
-        <div class="skills">
-            <div class="skill"><i class="fas fa-project-diagram"></i> Gestão de Projetos</div>
-            <div class="skill"><i class="fas fa-headset"></i> Atendimento ao Cliente</div>
-            <div class="skill"><i class="fas fa-code"></i> Desenvolvimento de Software</div>
-            <div class="skill"><i class="fab fa-python"></i> Python</div>
-            <div class="skill"><i class="fab fa-java"></i> Java</div>
-            <div class="skill"><i class="fas fa-database"></i> SQL</div>
-            <div class="skill"><i class="fab fa-c"></i> C</div>
-            <div class="skill"><i class="fab fa-cuttlefish"></i> C++</div>
-        </div>
-    </section>
-    
-    <section id="experiencia" class="container">
-        <h2>Experiência</h2>
-        <div class="experience">
-            <h3><i class="fas fa-user-tie"></i> Líder de Sucesso do Cliente</h3>
-            <p><strong>Hostinger Brasil Hospedagem de Sites LTDA (2024 – Presente)</strong></p>
-            <ul>
-                <li><i class="fas fa-check-circle"></i> Liderar uma equipe global de 28 especialistas.</li>
-                <li><i class="fas fa-check-circle"></i> Supervisionar o desempenho e garantir alta satisfação do cliente.</li>
-                <li><i class="fas fa-check-circle"></i> Atuar como elo de ligação entre a equipe e a gestão.</li>
-                <li><i class="fas fa-check-circle"></i> Colaborar com a equipe de produto para aprimorar produtos de domínio.</li>
-                <li><i class="fas fa-check-circle"></i> Definir e monitorar metas alinhadas à visão da empresa.</li>
-                <li><i class="fas fa-check-circle"></i> Fornecer treinamento e desenvolvimento para membros da equipe.</li>
-                <li><i class="fas fa-trophy"></i> Conquista: Aumentei a satisfação do cliente em 15% através da otimização de processos.</li>
-            </ul>
-            <!-- Adicione mais experiências aqui -->
-        </div>
-    </section>
-    
-    <section id="projetos" class="container">
-        <h2>Projetos</h2>
-        <div class="projects">
-            <div class="project">
-                <h3><a href="https://olikiverjesus.github.io/projetos/listadetarefas/" target="_blank"><i class="fas fa-list"></i> Lista de Tarefas</a></h3>
-                <p>Um aplicativo para gerenciar suas tarefas diárias.</p>
-            </div>
-            <div class="project">
-                <h3><a href="https://olikiverjesus.github.io/projetos/conversordemoedas/" target="_blank"><i class="fas fa-dollar-sign"></i> Conversor de Moedas</a></h3>
-                <p>Um conversor de moedas com taxas de câmbio atualizadas.</p>
-            </div>
-            <div class="project">
-                <h3><a href="https://olikiverjesus.github.io/projetos/financaspessoais/" target="_blank"><i class="fas fa-wallet"></i> Dashboard de Finanças Pessoais</a></h3>
-                <p>Um painel para gerenciar suas finanças pessoais.</p>
-            </div>
-            <div class="project">
-                <h3><a href="https://olikiverjesus.github.io/projetos/habitos/" target="_blank"><i class="fas fa-calendar-check"></i> Rastreamento de Hábitos</a></h3>
-                <p>Um aplicativo para rastrear e gerenciar seus hábitos diários.</p>
-            </div>
-        </div>
-    </section>
-    
-    <section id="idiomas" class="container">
-        <h2>Idiomas</h2>
-        <ul class="languages">
-            <li><i class="fas fa-globe-americas"></i> Português (Nativo)</li>
-            <li><i class="fas fa-globe-europe"></i> Inglês (Fluente)</li>
-            <li><i class="fas fa-globe-asia"></i> Espanhol (Básico)</li>
+        <ul>
+            <li><i class="icon-check"></i> Gestão de Projetos</li>
+            <li><i class="icon-check"></i> Atendimento ao Cliente</li>
+            <li><i class="icon-check"></i> Desenvolvimento de Software</li>
         </ul>
     </section>
-    
-    <section id="contato" class="container">
-        <h2>Contato</h2>
-        <p>Email: <a href="mailto:olikiversilva@gmail.com"><i class="fas fa-envelope"></i> olikiversilva@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/olikiverdejesusbarros/" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/olikiverdejesusbarros</a></p>
+
+    <!-- Seção Experiência -->
+    <section id="experience">
+        <h2>Experiência</h2>
+        <div class="experience">
+            <h3>Customer Success Team Leader</h3>
+            <p>Hostinger Brasil Hospedagem de Sites LTDA (2024 – Presente)</p>
+            <ul>
+                <li>Lead a global team of 28 specialists.</li>
+                <li>Oversee performance and ensure high customer satisfaction.</li>
+                <li>Act as the liaison between team and management.</li>
+                <li>Collaborate with the product team to enhance domain products.</li>
+                <li>Set and monitor goals aligned with company vision.</li>
+                <li>Provide training and development for team members.</li>
+                <li>Aumentei a satisfação do cliente em 15% através da otimização de processos.</li>
+            </ul>
+        </div>
+        <!-- Adicione outras experiências conforme necessário -->
     </section>
-    
+
+    <!-- Seção Projetos -->
+    <section id="projects">
+        <h2>Meus Projetos</h2>
+        <!-- Projeto Lista de Tarefas -->
+        <div class="project">
+            <h3>Lista de Tarefas</h3>
+            <a href="https://olikiverjesus.github.io/projetos/listadetarefas/" target="_blank">
+                <img src="path/to/listadetarefas-image.jpg" alt="Lista de Tarefas" class="project-img">
+            </a>
+            <p>Gerencie suas tarefas de forma eficiente com este aplicativo simples e intuitivo.</p>
+        </div>
+        
+        <!-- Projeto Conversor de Moedas -->
+        <div class="project">
+            <h3>Conversor de Moedas</h3>
+            <a href="https://olikiverjesus.github.io/projetos/conversordemoedas/" target="_blank">
+                <img src="path/to/conversordemoedas-image.jpg" alt="Conversor de Moedas" class="project-img">
+            </a>
+            <p>Converta moedas facilmente com esta ferramenta prática.</p>
+        </div>
+        
+        <!-- Projeto Dashboard de Finanças Pessoais -->
+        <div class="project">
+            <h3>Dashboard de Finanças Pessoais</h3>
+            <a href="https://olikiverjesus.github.io/projetos/financaspessoais/" target="_blank">
+                <img src="path/to/financaspessoais-image.jpg" alt="Dashboard de Finanças Pessoais" class="project-img">
+            </a>
+            <p>Controle suas finanças pessoais com este painel detalhado.</p>
+        </div>
+        
+        <!-- Novo Projeto: Calculadora com Histórico -->
+        <div class="project">
+            <h3>Calculadora com Histórico</h3>
+            <a href="https://olikiverjesus.github.io/projetos/calculadora/" target="_blank">
+                <img src="path/to/calculadora-image.jpg" alt="Calculadora com Histórico" class="project-img">
+            </a>
+            <p>Uma calculadora avançada com funcionalidade de histórico para suas operações matemáticas.</p>
+        </div>
+        
+        <!-- Novo Projeto: Rastreamento de Hábitos -->
+        <div class="project">
+            <h3>Rastreamento de Hábitos</h3>
+            <a href="https://olikiverjesus.github.io/projetos/habitos/" target="_blank">
+                <img src="path/to/habitos-image.jpg" alt="Rastreamento de Hábitos" class="project-img">
+            </a>
+            <p>Monitore seus hábitos diários e acompanhe seu progresso com esta ferramenta.</p>
+        </div>
+    </section>
+
+    <!-- Seção Idiomas -->
+    <section id="languages">
+        <h2>Idiomas</h2>
+        <ul>
+            <li><i class="icon-language"></i> Português (Nativo)</li>
+            <li><i class="icon-language"></i> Inglês (Fluente)</li>
+            <li><i class="icon-language"></i> Espanhol (Básico)</li>
+        </ul>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Email: <a href="mailto:olikiversilva@gmail.com">olikiversilva@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/olikiverdejesusbarros/" target="_blank">linkedin.com/in/olikiverdejesusbarros</a></p>
+    </section>
+
+    <!-- Rodapé -->
     <footer>
-        <p>&copy; 2024 Portfólio de Olikiver</p>
+        <p>© 2024 Portfólio de Olikiver</p>
     </footer>
     
     <script src="js/script.js"></script>

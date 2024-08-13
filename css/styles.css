@@ -1,48 +1,17 @@
-/* styles.css */
-
-/* Paleta de Cores */
-:root {
-    --primary-color: #3498db; /* Azul */
-    --secondary-color: #2ecc71; /* Verde */
-    --accent-color: #e74c3c; /* Vermelho */
-    --background-color: #f4f4f4; /* Fundo */
-    --text-color: #333; /* Texto */
-    --header-bg-color: #333; /* Fundo do Cabeçalho */
-    --footer-bg-color: #333; /* Fundo do Rodapé */
-    --card-bg-color: #fff; /* Fundo dos Cards */
-    --card-border-color: #ddd; /* Borda dos Cards */
-}
-
-/* Tipografia e Layout */
+/* Estilos gerais */
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--background-color);
-    font-size: 16px;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-h1, h2, h3 {
-    font-weight: 700;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.5rem;
+    color: #333;
+    background-color: #f9f9f9;
 }
 
 header {
-    background-color: var(--header-bg-color);
+    background: #2c3e50;
     color: #fff;
-    padding: 1.5rem 0;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 2rem 0;
     text-align: center;
-    position: relative;
 }
 
 header h1 {
@@ -50,185 +19,110 @@ header h1 {
     font-size: 2.5rem;
 }
 
+header p {
+    font-size: 1.2rem;
+}
+
+nav {
+    background: #3498db;
+    color: #fff;
+    padding: 1rem 0;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
 nav ul li {
-    margin: 0 0.5rem;
+    margin: 0 1rem;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-}
-
-nav ul li a i {
-    margin-right: 0.5rem;
-}
-
-nav ul li a:hover {
-    color: var(--secondary-color);
-}
-
-section {
-    padding: 3rem 1rem;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 0;
-}
-
-/* Projetos */
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-}
-
-.project {
-    background: var(--card-bg-color);
-    border: 1px solid var(--card-border-color);
-    border-radius: 8px;
-    padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    flex: 1 1 calc(50% - 2rem);
-    text-align: center;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project:hover {
-    background-color: var(--primary-color);
-    color: #fff;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-}
-
-.project a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.project a:hover {
-    text-decoration: underline;
-}
-
-/* Habilidades */
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.skill {
-    background: var(--card-bg-color);
-    border: 1px solid var(--card-border-color);
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    flex: 1 1 calc(33% - 2rem);
-    text-align: center;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skill:hover {
-    background-color: var(--secondary-color);
-    color: #fff;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-}
-
-.skill i {
-    display: block;
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
-/* Idiomas */
-.languages {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.languages li {
-    background: var(--card-bg-color);
-    border: 1px solid var(--card-border-color);
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    flex: 1 1 calc(33% - 2rem);
-    text-align: center;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.languages li:hover {
-    background-color: var(--primary-color);
-    color: #fff;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-}
-
-.languages i {
-    font-size: 1.5rem;
-    margin-right: 0.5rem;
-}
-
-/* Contato */
-#contato p {
     font-size: 1.1rem;
 }
 
-#contato a {
-    color: var(--primary-color);
+section {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
-#contato a:hover {
-    text-decoration: underline;
+h2 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
-/* Rodapé */
+.project {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.project h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.project-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project p {
+    font-size: 1rem;
+    color: #666;
+}
+
+#languages ul {
+    list-style: none;
+    padding: 0;
+}
+
+#languages ul li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.icon-language {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
 footer {
-    background-color: var(--footer-bg-color);
+    background: #2c3e50;
     color: #fff;
     text-align: center;
-    padding: 1rem;
-    position: relative;
-    width: 100%;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
 }
 
 /* Responsividade */
-@media (max-width: 1024px) {
-    .project {
-        flex: 1 1 calc(50% - 1rem);
-    }
-
-    .skill, .languages li {
-        flex: 1 1 calc(50% - 1rem);
-    }
-}
-
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
+    .project {
+        padding: 0.5rem;
     }
 
-    .project, .skill, .languages li {
-        flex: 1 1 calc(100% - 2rem);
+    .project h3 {
+        font-size: 1.25rem;
+    }
+
+    .project p {
+        font-size: 0.875rem;
     }
 
     nav ul {
@@ -237,23 +131,5 @@ footer {
 
     nav ul li {
         margin: 0.5rem 0;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    .project, .skill, .languages li {
-        padding: 0.5rem;
-    }
-
-    header {
-        padding: 1rem 0;
-    }
-
-    nav ul li {
-        font-size: 1rem;
     }
 }
