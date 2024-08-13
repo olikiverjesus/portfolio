@@ -1,30 +1,33 @@
 /* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: #f4f4f9;
 }
 
 header {
-    background: #2c3e50;
+    background: linear-gradient(135deg, #1e90ff, #00bfff);
     color: #fff;
     padding: 2rem 0;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5rem;
+    font-weight: 700;
 }
 
 header p {
     font-size: 1.2rem;
+    font-weight: 300;
 }
 
 nav {
-    background: #3498db;
+    background: #007bff;
     color: #fff;
     padding: 1rem 0;
 }
@@ -45,11 +48,13 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
-    transition: color 0.3s ease;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #2980b9;
+    color: #f0f0f0;
+    transform: scale(1.1);
 }
 
 section {
@@ -59,45 +64,47 @@ section {
 }
 
 h2 {
-    border-bottom: 2px solid #3498db;
+    border-bottom: 3px solid #1e90ff;
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
     color: #333;
+    font-size: 2rem;
 }
 
 .project {
     margin-bottom: 2rem;
-    padding: 1rem;
+    padding: 1.5rem;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #fff;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .project:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f0f8ff;
 }
 
 .project h3 {
     margin-top: 0;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: #333;
 }
 
 .project-link {
     display: inline-block;
     font-size: 3rem;
-    color: #3498db;
+    color: #007bff;
     text-decoration: none;
     margin-bottom: 1rem;
     transition: color 0.3s ease;
 }
 
 .project-link:hover {
-    color: #2980b9;
+    color: #0056b3;
 }
 
 .project p {
@@ -109,39 +116,45 @@ h2 {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 #languages ul li {
-    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #007bff;
 }
 
 #languages i {
-    color: #3498db;
+    color: #007bff;
     margin-right: 0.5rem;
+    font-size: 1.5rem;
 }
 
 button, .btn {
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem;
     font-size: 1rem;
     color: #fff;
-    background-color: #3498db;
+    background-color: #1e90ff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 button:hover, .btn:hover {
-    background-color: #2980b9;
+    background-color: #1c6ea4;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
 }
 
 footer {
-    background: #2c3e50;
+    background: linear-gradient(135deg, #1e90ff, #00bfff);
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -153,11 +166,11 @@ footer {
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
     .project {
-        padding: 0.5rem;
+        padding: 1rem;
     }
 
     .project h3 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     .project p {
@@ -178,5 +191,9 @@ footer {
 
     header p {
         font-size: 1rem;
+    }
+
+    #languages ul {
+        flex-direction: column;
     }
 }
