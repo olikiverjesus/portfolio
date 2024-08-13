@@ -65,6 +65,7 @@ h2 {
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #fff;
+    text-align: center;
 }
 
 .project h3 {
@@ -73,11 +74,16 @@ h2 {
     color: #333;
 }
 
-.project-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.project-link {
+    display: inline-block;
+    font-size: 3rem;
+    color: #3498db;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.project-link:hover {
+    color: #2980b9;
 }
 
 .project p {
@@ -88,15 +94,15 @@ h2 {
 #languages ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 #languages ul li {
-    font-size: 1rem;
     margin: 0.5rem 0;
 }
 
-.icon-language {
-    font-size: 1.2rem;
+#languages i {
+    color: #3498db;
     margin-right: 0.5rem;
 }
 
@@ -105,13 +111,12 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-footer p {
-    margin: 0;
-}
-
-/* Responsividade */
+/* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
     .project {
         padding: 0.5rem;
