@@ -203,24 +203,28 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
-    position: fixed;
-    bottom: 0;
+    position: relative;
     width: 100%;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .project, .skill {
+    .project, .skill, .languages li {
         flex: 1 1 100%;
+    }
+    
+    header h1 {
+        font-size: 2rem;
     }
 }
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
-    .project {
+    .project, .skill, .languages li {
         flex: 1 1 100%;
+        padding: 0.5rem;
     }
 }
