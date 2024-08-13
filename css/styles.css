@@ -27,6 +27,7 @@ header {
     background-color: #333;
     color: #fff;
     padding: 1.5rem 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 header h1 {
@@ -52,6 +53,10 @@ nav ul li a {
     font-size: 1.2rem;
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 section {
     padding: 3rem 0;
 }
@@ -63,6 +68,13 @@ section {
 }
 
 /* Projetos */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
 .project {
     background: #fff;
     border: 1px solid #ddd;
@@ -70,6 +82,8 @@ section {
     margin-bottom: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1 1 calc(33% - 2rem);
+    text-align: center;
 }
 
 .project h3 {
@@ -84,6 +98,24 @@ section {
 
 .project a:hover {
     text-decoration: underline;
+}
+
+/* Habilidades */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.skill {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1 1 calc(33% - 2rem);
+    text-align: center;
 }
 
 /* Botões */
@@ -142,7 +174,11 @@ footer {
     }
     
     .project {
-        margin: 0 auto;
+        flex: 1 1 calc(50% - 2rem);
+    }
+
+    .skill {
+        flex: 1 1 calc(50% - 2rem);
     }
 }
 
@@ -154,6 +190,14 @@ footer {
     .btn {
         font-size: 0.8rem;
         padding: 0.4rem 0.8rem;
+    }
+
+    .project {
+        flex: 1 1 100%;
+    }
+
+    .skill {
+        flex: 1 1 100%;
     }
 }
 
