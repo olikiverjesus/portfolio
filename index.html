@@ -1,132 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio de Olikiver</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <header>
         <h1>Portfólio de Olikiver</h1>
-        <p>Desenvolvedor Web & Designer de Experiência do Usuário</p>
+        <p>Desenvolvedor de Software e Customer Success</p>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#experiencias">Experiências</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#conquistas">Conquistas</a></li>
-            <li><a href="#idiomas">Idiomas</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
 
-    <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Sou um desenvolvedor web apaixonado por criar soluções digitais que tornam a vida das pessoas mais fácil. Tenho experiência em diversas linguagens de programação e estou sempre em busca de novos desafios.</p>
-    </section>
+    <div class="container">
+        <section class="about-me">
+            <h2>Sobre Mim</h2>
+            <p>Sou um desenvolvedor com vasta experiência em resolver problemas técnicos e ajudar clientes a alcançar o sucesso. Especializado em otimização de processos e desenvolvimento de soluções eficazes.</p>
+        </section>
 
-    <section id="experiencias">
-        <h2>Experiências</h2>
-        
-        <div class="experience">
-            <h3>Customer Success Team Leader</h3>
-            <p><i class="fas fa-briefcase"></i> Hostinger Brasil Hospedagem de Sites LTDA | 2024 – Presente</p>
-            <p>Conduzo uma equipe global de 28 especialistas, garantindo alta satisfação dos clientes e colaborando com a equipe de produto para melhorar os serviços de domínio.</p>
-        </div>
+        <section class="experience">
+            <h3>Experiência</h3>
+            <p><strong>Customer Success Team Leader</strong> - Hostinger Brasil (2024 - Presente)</p>
+            <p><strong>SME</strong> - Hostinger Brasil (2022 - 2024)</p>
+            <p><strong>Senior Customer Success Specialist</strong> - Hostinger Brasil (2021 - 2024)</p>
+            <p><strong>IT Coordinator</strong> - Esater Escola Técnica (2020 - 2021)</p>
+            <p><strong>Service Team Leader</strong> - Sanduba Grill (2015 - 2017)</p>
+        </section>
 
-        <div class="experience">
-            <h3>SME</h3>
-            <p><i class="fas fa-briefcase"></i> Hostinger Brasil Hospedagem de Sites LTDA | 2022 – 2024</p>
-            <p>Responsável por garantir a adesão da equipe aos horários, lidar com conformidade e reclamações públicas, e apoiar os especialistas em seus desafios diários.</p>
-        </div>
+        <section class="projects">
+            <h2>Projetos</h2>
 
-        <div class="experience">
-            <h3>Senior Customer Success Specialist</h3>
-            <p><i class="fas fa-briefcase"></i> Hostinger Brasil Hospedagem de Sites LTDA | 2021 – 2024</p>
-            <p>Prestei suporte técnico excepcional via chat e e-mail, focando no sucesso do cliente e na venda adicional de serviços.</p>
-        </div>
+            <div class="project">
+                <h3>Lista de Tarefas</h3>
+                <a class="project-link" href="https://olikiverjesus.github.io/projetos/listadetarefas/" target="_blank">
+                    <i class="fas fa-tasks"></i>
+                </a>
+                <p>Aplicação para gerenciar e organizar tarefas diárias.</p>
+            </div>
 
-        <div class="experience">
-            <h3>IT Coordinator</h3>
-            <p><i class="fas fa-briefcase"></i> Esater Escola Técnica de Enfermagem e Radiologia LTDA | 2020 – 2021</p>
-            <p>Auxiliei no setor pedagógico e supervisionava as áreas de TI, marketing, comunicação e finanças.</p>
-        </div>
+            <div class="project">
+                <h3>Conversor de Moedas</h3>
+                <a class="project-link" href="https://olikiverjesus.github.io/projetos/conversordemoedas/" target="_blank">
+                    <i class="fas fa-coins"></i>
+                </a>
+                <p>Ferramenta simples para conversão de moedas entre diferentes países.</p>
+            </div>
 
-        <div class="experience">
-            <h3>Service Team Leader/Internal Salesperson</h3>
-            <p><i class="fas fa-briefcase"></i> Sanduba Grill | 2015 – 2017</p>
-            <p>Realizei atendimento ao cliente, manuseio de caixa e controle de materiais, liderando e organizando os atendentes.</p>
-        </div>
-    </section>
+            <div class="project">
+                <h3>Dashboard de Finanças Pessoais</h3>
+                <a class="project-link" href="https://olikiverjesus.github.io/projetos/financaspessoais/" target="_blank">
+                    <i class="fas fa-chart-line"></i>
+                </a>
+                <p>Painel para controlar suas finanças e acompanhar gastos.</p>
+            </div>
 
-    <section id="projetos">
-        <h2>Projetos</h2>
-        
-        <div class="project">
-            <h3>Lista de Tarefas</h3>
-            <a href="https://olikiverjesus.github.io/projetos/listadetarefas/" class="project-link">
-                <i class="fas fa-tasks"></i>
-            </a>
-            <p>Um projeto de lista de tarefas para organizar suas atividades diárias de forma prática e eficiente.</p>
-        </div>
+            <div class="project">
+                <h3>Rastreamento de Hábitos</h3>
+                <a class="project-link" href="https://olikiverjesus.github.io/projetos/habitos/" target="_blank">
+                    <i class="fas fa-calendar-check"></i>
+                </a>
+                <p>Aplicativo para acompanhar e melhorar seus hábitos diários.</p>
+            </div>
 
-        <div class="project">
-            <h3>Conversor de Moedas</h3>
-            <a href="https://olikiverjesus.github.io/projetos/conversordemoedas/" class="project-link">
-                <i class="fas fa-exchange-alt"></i>
-            </a>
-            <p>Ferramenta simples para converter valores entre diferentes moedas em tempo real.</p>
-        </div>
+            <div class="project">
+                <h3>Calculadora com Histórico</h3>
+                <a class="project-link" href="https://olikiverjesus.github.io/projetos/calculadora/" target="_blank">
+                    <i class="fas fa-calculator"></i>
+                </a>
+                <p>Calculadora que mantém o histórico de operações realizadas.</p>
+            </div>
+        </section>
 
-        <div class="project">
-            <h3>Rastreamento de Hábitos</h3>
-            <a href="https://olikiverjesus.github.io/projetos/habitos/" class="project-link">
-                <i class="fas fa-chart-line"></i>
-            </a>
-            <p>Aplicação para rastrear seus hábitos diários e ajudar a alcançar seus objetivos de forma consistente.</p>
-        </div>
-
-        <div class="project">
-            <h3>Dashboard de Finanças Pessoais</h3>
-            <a href="https://olikiverjesus.github.io/projetos/financaspessoais/" class="project-link">
-                <i class="fas fa-wallet"></i>
-            </a>
-            <p>Gerencie suas finanças pessoais com este dashboard interativo e fácil de usar.</p>
-        </div>
-
-        <div class="project">
-            <h3>Calculadora com Histórico</h3>
-            <a href="https://olikiverjesus.github.io/projetos/calculadora/" class="project-link">
-                <i class="fas fa-calculator"></i>
-            </a>
-            <p>Uma calculadora simples com histórico para facilitar seus cálculos diários.</p>
-        </div>
-    </section>
-
-    <section id="conquistas">
-        <h2>Conquistas</h2>
-        <ul>
-            <li>Aumentei a satisfação dos clientes em 15% com otimização de processos.</li>
-            <li>Melhorei a eficiência da equipe em 20% como Especialista em Materiais.</li>
-            <li>Graduado em Ciência da Computação pela UNIFACS.</li>
-        </ul>
-    </section>
-
-    <section id="idiomas">
-        <h2>Idiomas</h2>
-        <ul>
-            <li><i class="fas fa-globe"></i> Português (Nativo)</li>
-            <li><i class="fas fa-globe"></i> Inglês (Fluente)</li>
-            <li><i class="fas fa-globe"></i> Espanhol (Básico)</li>
-        </ul>
-    </section>
+        <section class="languages">
+            <h2>Idiomas</h2>
+            <ul>
+                <li><i class="fas fa-language"></i> Português (Nativo)</li>
+                <li><i class="fas fa-language"></i> Inglês (Fluente)</li>
+                <li><i class="fas fa-language"></i> Espanhol (Básico)</li>
+            </ul>
+        </section>
+    </div>
 
     <footer>
-        <p>© 2024 Olikiver - Todos os Direitos Reservados</p>
+        <p>&copy; 2024 Olikiver. Todos os direitos reservados.</p>
     </footer>
 </body>
+
 </html>
