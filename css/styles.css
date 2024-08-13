@@ -1,83 +1,68 @@
-/* Estilos gerais */
+/* Configurações globais */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f7f9fc;
     color: #333;
-    background-color: #f4f4f9;
+    line-height: 1.6;
 }
 
+/* Estilo do container principal */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Seção de cabeçalho */
 header {
-    background: linear-gradient(135deg, #1e90ff, #00bfff);
-    color: #fff;
+    background: linear-gradient(to right, #1e90ff, #00bfff);
     padding: 2rem 0;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 header p {
     font-size: 1.2rem;
-    font-weight: 300;
+    margin-top: 0.5rem;
 }
 
-nav {
-    background: #007bff;
-    color: #fff;
-    padding: 1rem 0;
+/* Estilo da seção "Sobre Mim" */
+.about-me {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 500;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #f0f0f0;
-    transform: scale(1.1);
-}
-
-section {
-    padding: 2rem;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-h2 {
-    border-bottom: 3px solid #1e90ff;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-    color: #333;
+.about-me h2 {
     font-size: 2rem;
+    color: #1e90ff;
 }
 
+.about-me p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Seção de experiência */
 .experience {
     margin-bottom: 2rem;
     padding: 1.5rem;
-    border: 1px solid #ddd;
     border-radius: 15px;
-    background-color: #fff;
-    text-align: center;
+    background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -85,13 +70,13 @@ h2 {
 .experience h3 {
     margin-top: 0;
     font-size: 1.8rem;
-    color: #007bff;
+    color: #ff6347;
 }
 
 .experience p {
     margin: 0.5rem 0;
     font-size: 1.1rem;
-    color: #666;
+    color: #555;
 }
 
 .experience:hover {
@@ -99,12 +84,13 @@ h2 {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* Estilo da seção de projetos */
 .project {
     margin-bottom: 2rem;
     padding: 1.5rem;
     border: 1px solid #ddd;
     border-radius: 15px;
-    background-color: #fff;
+    background-color: #ffffff;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -113,19 +99,19 @@ h2 {
 .project h3 {
     margin-top: 0;
     font-size: 1.8rem;
-    color: #007bff;
+    color: #32cd32;
 }
 
 .project-link {
     display: inline-block;
     margin: 1rem 0;
     font-size: 2rem;
-    color: #1e90ff;
+    color: #ff4500;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .project-link:hover {
-    color: #007bff;
+    color: #ff6347;
     transform: scale(1.2);
 }
 
@@ -147,6 +133,7 @@ li i {
     color: #1e90ff;
 }
 
+/* Estilo de botão */
 button {
     background-color: #1e90ff;
     color: #fff;
@@ -163,6 +150,7 @@ button:hover {
     transform: scale(1.05);
 }
 
+/* Estilo do rodapé */
 footer {
     background: #1e90ff;
     color: #fff;
@@ -174,4 +162,31 @@ footer {
 footer p {
     margin: 0;
     font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .about-me h2, .experience h3, .project h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-me p, .experience p, .project p {
+        font-size: 1rem;
+    }
+
+    .project-link {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
 }
