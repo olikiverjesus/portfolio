@@ -1,193 +1,104 @@
-/* Configurações globais */
+/* styles.css */
 body {
     font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f0f4f8;
     color: #333;
-    line-height: 1.6;
 }
 
-/* Estilo do container principal */
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
-}
-
-/* Seção de cabeçalho */
 header {
-    background: linear-gradient(to right, #0073e6, #00bfff);
-    padding: 2rem 0;
-    text-align: center;
+    background: #0044cc;
     color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
+    padding: 1rem 0;
+    text-align: center;
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5rem;
-    font-weight: bold;
 }
 
 header p {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-}
-
-/* Estilo da seção "Sobre Mim" */
-.about-me {
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    border-radius: 15px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.about-me h2 {
-    font-size: 2rem;
-    color: #0073e6;
-}
-
-.about-me p {
-    font-size: 1.2rem;
-    color: #555;
-}
-
-/* Seção de experiência */
-.experience {
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    border-radius: 15px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.experience h3 {
-    margin-top: 0;
-    font-size: 1.8rem;
-    color: #005bb5;
-}
-
-.experience p {
     margin: 0.5rem 0;
-    font-size: 1.1rem;
-    color: #555;
+    font-size: 1.25rem;
 }
 
-.experience:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
 }
 
-/* Estilo da seção de projetos */
-.project {
+section {
     margin-bottom: 2rem;
-    padding: 1.5rem;
-    border: 1px solid #ddd;
-    border-radius: 15px;
-    background-color: #ffffff;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project h3 {
-    margin-top: 0;
-    font-size: 1.8rem;
-    color: #00bfff;
+h2 {
+    color: #0044cc;
+    border-bottom: 2px solid #0044cc;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: #333;
+}
+
+.project {
+    margin-bottom: 1.5rem;
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .project-link {
     display: inline-block;
-    margin: 1rem 0;
+    color: #0044cc;
     font-size: 2rem;
-    color: #0073e6;
-    transition: color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 0.5rem;
 }
 
 .project-link:hover {
-    color: #005bb5;
-    transform: scale(1.2);
+    color: #002a8a;
 }
 
-ul {
-    list-style-type: none;
+.languages ul {
+    list-style: none;
     padding: 0;
 }
 
-li {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-    color: #333;
-    display: flex;
-    align-items: center;
+.languages li {
+    margin-bottom: 0.5rem;
 }
 
-li i {
-    margin-right: 0.5rem;
-    color: #0073e6;
+.contact a {
+    color: #0044cc;
 }
 
-/* Estilo de botão */
-button {
-    background-color: #0073e6;
-    color: #fff;
-    padding: 0.7rem 1.5rem;
-    border: none;
-    border-radius: 15px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+.contact a:hover {
+    color: #002a8a;
 }
 
-button:hover {
-    background-color: #005bb5;
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Estilo do rodapé */
 footer {
-    background: #0073e6;
+    background: #0044cc;
     color: #fff;
-    padding: 1rem 0;
     text-align: center;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem 0;
 }
 
 footer p {
     margin: 0;
-    font-size: 1rem;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
     }
 
     header p {
-        font-size: 1rem;
-    }
-
-    .about-me h2, .experience h3, .project h3 {
-        font-size: 1.5rem;
-    }
-
-    .about-me p, .experience p, .project p {
-        font-size: 1rem;
-    }
-
-    .project-link {
-        font-size: 1.5rem;
-    }
-
-    button {
         font-size: 1rem;
     }
 }
