@@ -5,11 +5,11 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background: #f0f4f8;
+    background: #f4f7fa;
 }
 
 header {
-    background: linear-gradient(135deg, #003366, #0066cc);
+    background: linear-gradient(135deg, #007bff, #0056b3);
     color: #fff;
     padding: 2rem 0;
     text-align: center;
@@ -24,12 +24,29 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 header p {
     margin: 0.5rem 0;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #0056b3;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #004494;
+    transform: scale(1.05);
 }
 
 .container {
@@ -40,43 +57,43 @@ header p {
 }
 
 section {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 h2 {
-    color: #003366;
-    border-bottom: 3px solid #003366;
+    color: #007bff;
+    border-bottom: 3px solid #007bff;
     padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 h3 {
-    color: #003366;
+    color: #0056b3;
 }
 
 .project {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     background: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .project-link {
     display: inline-block;
-    color: #003366;
-    font-size: 2rem;
+    color: #007bff;
+    font-size: 2.5rem;
     transition: color 0.3s, transform 0.3s;
 }
 
 .project-link:hover {
-    color: #0066cc;
+    color: #0056b3;
     transform: scale(1.1);
 }
 
@@ -86,29 +103,29 @@ h3 {
 }
 
 .languages li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     display: flex;
     align-items: center;
 }
 
 .languages i {
-    margin-right: 0.5rem;
+    margin-right: 0.75rem;
 }
 
 .contact a {
-    color: #003366;
+    color: #007bff;
     transition: color 0.3s;
 }
 
 .contact a:hover {
-    color: #0066cc;
+    color: #0056b3;
 }
 
 footer {
-    background: #003366;
+    background: #007bff;
     color: #fff;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -121,15 +138,15 @@ footer p {
 /* Responsive Design */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     header p {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
     .project-link {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -139,14 +156,14 @@ footer p {
     }
 
     header h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     header p {
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
 
     .project-link {
-        font-size: 1.25rem;
+        font-size: 1.75rem;
     }
 }
