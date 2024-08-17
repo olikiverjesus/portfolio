@@ -1,18 +1,25 @@
 /* styles.css */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f4f4f4;
+    background: #f0f4f8;
 }
 
 header {
-    background: #003366;
+    background: linear-gradient(135deg, #003366, #0066cc);
     color: #fff;
-    padding: 1rem 0;
+    padding: 2rem 0;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
 }
 
 header h1 {
@@ -44,7 +51,7 @@ h2 {
 }
 
 h3 {
-    color: #333;
+    color: #003366;
 }
 
 .project {
@@ -53,22 +60,24 @@ h3 {
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .project-link {
     display: inline-block;
     color: #003366;
     font-size: 2rem;
-    margin-bottom: 0.5rem;
-    transition: color 0.3s, transform 0.3s, background-color 0.3s;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .project-link:hover {
-    color: #002a80;
+    color: #0066cc;
     transform: scale(1.1);
-    background-color: #e6e6e6;
-    border-radius: 50%;
-    padding: 0.5rem;
 }
 
 .languages ul {
@@ -78,6 +87,12 @@ h3 {
 
 .languages li {
     margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.languages i {
+    margin-right: 0.5rem;
 }
 
 .contact a {
@@ -86,7 +101,7 @@ h3 {
 }
 
 .contact a:hover {
-    color: #002a80;
+    color: #0066cc;
 }
 
 footer {
@@ -115,5 +130,23 @@ footer p {
 
     .project-link {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem 0;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.875rem;
+    }
+
+    .project-link {
+        font-size: 1.25rem;
     }
 }
