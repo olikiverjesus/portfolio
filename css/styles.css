@@ -59,10 +59,12 @@ h3 {
     color: #0044cc;
     font-size: 2rem;
     margin-bottom: 0.5rem;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .project-link:hover {
     color: #002a8a;
+    transform: scale(1.1);
 }
 
 .languages ul {
@@ -76,6 +78,7 @@ h3 {
 
 .contact a {
     color: #0044cc;
+    transition: color 0.3s;
 }
 
 .contact a:hover {
@@ -93,6 +96,7 @@ footer p {
     margin: 0;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
@@ -100,5 +104,9 @@ footer p {
 
     header p {
         font-size: 1rem;
+    }
+
+    .project-link {
+        font-size: 1.5rem;
     }
 }
