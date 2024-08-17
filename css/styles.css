@@ -5,10 +5,11 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    background-color: #f4f4f4;
 }
 
 header {
-    background: #0044cc;
+    background: #003366;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -36,8 +37,8 @@ section {
 }
 
 h2 {
-    color: #0044cc;
-    border-bottom: 2px solid #0044cc;
+    color: #003366;
+    border-bottom: 3px solid #003366;
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
 }
@@ -48,7 +49,7 @@ h3 {
 
 .project {
     margin-bottom: 1.5rem;
-    background: #f4f4f4;
+    background: #fff;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -56,15 +57,18 @@ h3 {
 
 .project-link {
     display: inline-block;
-    color: #0044cc;
+    color: #003366;
     font-size: 2rem;
     margin-bottom: 0.5rem;
-    transition: color 0.3s, transform 0.3s;
+    transition: color 0.3s, transform 0.3s, background-color 0.3s;
 }
 
 .project-link:hover {
-    color: #002a8a;
+    color: #002a80;
     transform: scale(1.1);
+    background-color: #e6e6e6;
+    border-radius: 50%;
+    padding: 0.5rem;
 }
 
 .languages ul {
@@ -77,19 +81,22 @@ h3 {
 }
 
 .contact a {
-    color: #0044cc;
+    color: #003366;
     transition: color 0.3s;
 }
 
 .contact a:hover {
-    color: #002a8a;
+    color: #002a80;
 }
 
 footer {
-    background: #0044cc;
+    background: #003366;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 footer p {
