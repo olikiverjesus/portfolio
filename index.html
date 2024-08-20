@@ -1,148 +1,155 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio de Olikiver</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-
 <body>
+    <!-- Cabeçalho -->
     <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <h1 class="logo">Olikiver</h1>
-                <button class="menu-toggle" id="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <ul class="nav-menu" id="nav-menu">
-                    <li><a href="#about">Sobre Mim</a></li>
-                    <li><a href="#experience">Experiência</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#languages">Linguagens</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="header-content">
+        <div class="container">
             <h1>Portfólio de Olikiver</h1>
-            <p>Desenvolvedor de Software e Customer Success</p>
-            <a href="#contact" class="cta-button">Entre em Contato</a>
+            <p>Desenvolvedor de Software & Especialista em Customer Success</p>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#experiencia">Experiência</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <div class="container">
-        <section id="about" class="about-me">
+    <!-- Seção Sobre Mim -->
+    <section id="sobre">
+        <div class="container">
             <h2>Sobre Mim</h2>
-            <p>Sou um desenvolvedor de software e especialista em Customer Success com ampla experiência na resolução de problemas técnicos e na otimização de processos. Minha missão é oferecer soluções eficazes e garantir a satisfação dos clientes.</p>
-        </section>
+            <p>Sou um profissional com experiência em liderança de equipes e otimização de processos. Com um histórico comprovado na área de Customer Success e Desenvolvimento de Software, foco em oferecer soluções eficazes e melhorar a satisfação do cliente.</p>
+        </div>
+    </section>
 
-        <section id="experience" class="experience">
-            <h2>Experiência</h2>
-            <div class="experience-item">
-                <h3>Customer Success Team Leader</h3>
-                <p><strong>Hostinger Brasil</strong> (2024 - Presente)</p>
-                <ul>
-                    <li>Lidero uma equipe global de 28 especialistas.</li>
-                    <li>Supervisiono o desempenho e asseguro a alta satisfação dos clientes.</li>
-                    <li>Atuo como elo de ligação entre a equipe e a gestão.</li>
-                    <li>Colaboro com a equipe de produto para melhorar os produtos do domínio.</li>
-                    <li>Defino e monitoro metas alinhadas com a visão da empresa.</li>
-                    <li>Proporciono treinamento e desenvolvimento para os membros da equipe.</li>
-                    <li><strong>Conquista:</strong> Aumentei a satisfação dos clientes em 15% através da otimização de processos.</li>
-                </ul>
-            </div>
-            <!-- Adicione mais experiências conforme necessário -->
-        </section>
-
-        <section id="projects" class="projects">
-            <h2>Projetos</h2>
-            <div class="project">
-                <h3>Lista de Tarefas</h3>
-                <a class="project-link" href="https://olikiverjesus.github.io/projetos/listadetarefas/" target="_blank">
+    <!-- Seção Habilidades -->
+    <section id="habilidades">
+        <div class="container">
+            <h2>Minhas Habilidades</h2>
+            <div class="skills">
+                <div class="skill">
                     <i class="fas fa-tasks"></i>
-                </a>
-                <p>Aplicação para gerenciar e organizar tarefas diárias.</p>
+                    <h3>Gestão de Projetos</h3>
+                    <p>Gerenciamento de projetos complexos desde o planejamento até a execução.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-headset"></i>
+                    <h3>Atendimento ao Cliente</h3>
+                    <p>Melhoria das métricas de satisfação do cliente e otimização de processos.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-code"></i>
+                    <h3>Desenvolvimento de Software</h3>
+                    <p>Experiência com diversas linguagens de programação e frameworks.</p>
+                </div>
             </div>
-            <div class="project">
-                <h3>Conversor de Moedas</h3>
-                <a class="project-link" href="https://olikiverjesus.github.io/projetos/conversordemoedas/" target="_blank">
-                    <i class="fas fa-coins"></i>
-                </a>
-                <p>Ferramenta simples para conversão de moedas entre diferentes países.</p>
-            </div>
-            <div class="project">
-                <h3>Dashboard de Finanças Pessoais</h3>
-                <a class="project-link" href="https://olikiverjesus.github.io/projetos/financaspessoais/" target="_blank">
-                    <i class="fas fa-chart-line"></i>
-                </a>
-                <p>Painel para controlar suas finanças e acompanhar gastos.</p>
-            </div>
-            <div class="project">
-                <h3>Calculadora com Histórico</h3>
-                <a class="project-link" href="https://olikiverjesus.github.io/projetos/calculadora/" target="_blank">
-                    <i class="fas fa-calculator"></i>
-                </a>
-                <p>Calculadora que mantém o histórico de operações realizadas.</p>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="languages" class="languages">
-            <h2>Idiomas e Linguagens</h2>
-            <div class="language-icons">
+    <!-- Seção Experiência -->
+    <section id="experiencia">
+        <div class="container">
+            <h2>Experiência</h2>
+            <div class="experience">
+                <h3>Customer Success Team Leader</h3>
+                <p>Hostinger Brasil Hospedagem de Sites LTDA (2024 – Presente)</p>
+                <ul>
+                    <li>Liderei uma equipe global de 28 especialistas.</li>
+                    <li>Supervisionei o desempenho e garanti alta satisfação do cliente.</li>
+                    <li>Atuei como elo entre a equipe e a gestão.</li>
+                    <li>Colaborei com a equipe de produto para melhorar os produtos de domínio.</li>
+                    <li>Estabeleci e monitorei metas alinhadas à visão da empresa.</li>
+                    <li>Proporcionei treinamento e desenvolvimento para os membros da equipe.</li>
+                    <li>Conquista: Aumentei a satisfação do cliente em 15% por meio da otimização de processos.</li>
+                </ul>
+                <!-- Adicione outras experiências aqui -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Lista de Tarefas</h3>
+                    <a href="https://olikiverjesus.github.io/projetos/listadetarefas/" target="_blank">Veja o Projeto</a>
+                </div>
+                <div class="project">
+                    <h3>Conversor de Moedas</h3>
+                    <a href="https://olikiverjesus.github.io/projetos/conversordemoedas/" target="_blank">Veja o Projeto</a>
+                </div>
+                <div class="project">
+                    <h3>Dashboard de Finanças Pessoais</h3>
+                    <a href="https://olikiverjesus.github.io/projetos/financaspessoais/" target="_blank">Veja o Projeto</a>
+                </div>
+                <div class="project">
+                    <h3>Calculadora com Histórico</h3>
+                    <a href="https://olikiverjesus.github.io/projetos/calculadora/" target="_blank">Veja o Projeto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Linguagens de Programação -->
+    <section id="linguagens">
+        <div class="container">
+            <h2>Linguagens que Eu Trabalho</h2>
+            <div class="languages">
                 <div class="language">
                     <i class="fab fa-python"></i>
-                    <span>Python</span>
+                    <p>Python</p>
                 </div>
                 <div class="language">
                     <i class="fab fa-java"></i>
-                    <span>Java</span>
-                </div>
-                <div class="language">
-                    <i class="fab fa-php"></i>
-                    <span>PHP</span>
+                    <p>Java</p>
                 </div>
                 <div class="language">
                     <i class="fab fa-js"></i>
-                    <span>JavaScript</span>
-                </div>
-                <div class="language">
-                    <i class="fab fa-cplusplus"></i>
-                    <span>C++</span>
+                    <p>JavaScript</p>
                 </div>
                 <div class="language">
                     <i class="fas fa-database"></i>
-                    <span>SQL</span>
+                    <p>SQL</p>
+                </div>
+                <div class="language">
+                    <i class="fab fa-php"></i>
+                    <p>PHP</p>
+                </div>
+                <div class="language">
+                    <i class="fas fa-c"></i>
+                    <p>C</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact" class="contact">
-            <h2>Contato</h2>
-            <p><i class="fas fa-envelope"></i> E-mail: <a href="mailto:olikiversilva@gmail.com">olikiversilva@gmail.com</a></p>
-            <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/olikiverdejesusbarros/" target="_blank">linkedin.com/in/olikiverdejesusbarros/</a></p>
-        </section>
-    </div>
+    <!-- Seção de Contato -->
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Email: <a href="mailto:olikiversilva@gmail.com">olikiversilva@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/olikiverjesus/" target="_blank">olikiverjesus</a></p>
+        </div>
+    </section>
 
+    <!-- Rodapé -->
     <footer>
-        <p>&copy; 2024 Olikiver. Todos os direitos reservados.</p>
+        <div class="container">
+            <p>© 2024 Portfólio de Olikiver</p>
+        </div>
     </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
-    <script>
-        // Script para o menu de navegação móvel
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            var navMenu = document.getElementById('nav-menu');
-            if (navMenu.style.display === 'block') {
-                navMenu.style.display = 'none';
-            } else {
-                navMenu.style.display = 'block';
-            }
-        });
-    </script>
 </body>
-
 </html>
