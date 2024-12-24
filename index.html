@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Olikiver: Desenvolvedor de Software e Especialista em Customer Success. Explore minhas habilidades, experiência e projetos.">
     <title>Portfólio de Olikiver</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -73,7 +75,6 @@
                     <li>Proporcionei treinamento e desenvolvimento para os membros da equipe.</li>
                     <li>Conquista: Aumentei a satisfação do cliente em 15% por meio da otimização de processos.</li>
                 </ul>
-                <!-- Adicione outras experiências aqui -->
             </div>
         </div>
     </section>
@@ -84,18 +85,22 @@
             <h2>Projetos</h2>
             <div class="projects">
                 <div class="project">
+                    <img src="img/lista-de-tarefas.png" alt="Lista de Tarefas">
                     <h3>Lista de Tarefas</h3>
                     <a href="https://olikiverjesus.github.io/projetos/listadetarefas/" target="_blank">Veja o Projeto</a>
                 </div>
                 <div class="project">
+                    <img src="img/conversor-de-moedas.png" alt="Conversor de Moedas">
                     <h3>Conversor de Moedas</h3>
                     <a href="https://olikiverjesus.github.io/projetos/conversordemoedas/" target="_blank">Veja o Projeto</a>
                 </div>
                 <div class="project">
+                    <img src="img/financas-pessoais.png" alt="Dashboard de Finanças Pessoais">
                     <h3>Dashboard de Finanças Pessoais</h3>
                     <a href="https://olikiverjesus.github.io/projetos/financaspessoais/" target="_blank">Veja o Projeto</a>
                 </div>
                 <div class="project">
+                    <img src="img/calculadora.png" alt="Calculadora com Histórico">
                     <h3>Calculadora com Histórico</h3>
                     <a href="https://olikiverjesus.github.io/projetos/calculadora/" target="_blank">Veja o Projeto</a>
                 </div>
@@ -140,8 +145,12 @@
     <section id="contato">
         <div class="container">
             <h2>Entre em Contato</h2>
-            <p>Email: <a href="mailto:olikiversilva@gmail.com">olikiversilva@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/olikiverjesus/" target="_blank">olikiverjesus</a></p>
+            <form action="https://formspree.io/f/seu-email" method="POST">
+                <input type="text" name="nome" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu Email" required>
+                <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </div>
     </section>
 
@@ -149,6 +158,10 @@
     <footer>
         <div class="container">
             <p>© 2024 Portfólio de Olikiver</p>
+            <div class="social-links">
+                <a href="https://github.com/olikiverjesus" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/olikiverjesus/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
         </div>
     </footer>
 </body>
