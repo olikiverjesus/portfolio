@@ -3,223 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio profissional de desenvolvedor Full Stack destacando habilidades e projetos modernos.">
-    <title>Olikiver | Desenvolvedor Full Stack</title>
-
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <!-- AOS Animation -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <!-- Custom CSS -->
+    <title>Portfólio de Olikiver</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        /* Global Styles */
         body {
-            font-family: 'Roboto', sans-serif;
-            background: #f5f5f5;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
         }
 
-        /* Header */
         header {
-            background: linear-gradient(120deg, #6c63ff, #3b2f97);
-            color: #fff;
+            background: linear-gradient(45deg, #007bff, #6610f2);
+            color: white;
+            padding: 1.5rem 0;
             text-align: center;
-            padding: 5rem 1rem;
         }
+
         header h1 {
-            font-size: 3rem;
-            font-weight: bold;
+            font-size: 2.5rem;
         }
+
         header p {
-            font-size: 1.2rem;
-        }
-        header a {
-            margin-top: 1.5rem;
-            font-size: 1.1rem;
-            padding: 0.7rem 1.5rem;
-            border: 2px solid #fff;
-            border-radius: 50px;
-            text-transform: uppercase;
-            color: #fff;
-            transition: all 0.3s ease;
-        }
-        header a:hover {
-            background: #fff;
-            color: #6c63ff;
+            margin: 0.5rem 0 1rem;
         }
 
-        /* About Section */
-        #sobre {
-            padding: 4rem 1rem;
-            background: #fff;
-        }
-        #sobre img {
-            max-width: 100%;
-            border-radius: 15px;
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        section {
+            padding: 2rem 0;
         }
 
-        /* Skills Section */
-        #habilidades {
-            background: linear-gradient(120deg, #3b2f97, #6c63ff);
-            color: white;
-            padding: 4rem 1rem;
-        }
-        #habilidades h2 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-        }
-        #habilidades .skill {
-            margin: 1rem 0;
-        }
-        #habilidades .skill i {
-            font-size: 3rem;
-        }
-        #habilidades .icon-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            gap: 1rem;
-        }
-        #habilidades .icon-grid div {
-            text-align: center;
-            padding: 1rem;
-        }
-        #habilidades .icon-grid div i {
-            font-size: 2.5rem;
-            color: #fff;
+        .skills, .projects, .languages {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
         }
 
-        /* Projects Section */
-        #projetos {
-            padding: 4rem 1rem;
-        }
-        .project-card {
-            overflow: hidden;
-            position: relative;
-            border: none;
-            border-radius: 15px;
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-        .project-card img {
-            width: 100%;
-            transition: transform 0.3s ease;
-        }
-        .project-card:hover img {
-            transform: scale(1.1);
-        }
-        .project-card:hover {
-            transform: translateY(-10px);
-        }
-        .project-card .card-body {
+        .skill, .project, .language {
             background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 1rem;
             text-align: center;
-            padding: 1.5rem;
-        }
-        .project-card .btn {
-            margin-top: 0.5rem;
-            color: white;
-            background: #6c63ff;
-            border: none;
+            width: 18rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
         }
 
-        /* Contact Section */
-        #contato {
-            padding: 4rem 1rem;
-            background: #3b2f97;
-            color: white;
-            text-align: center;
-        }
-        #contato form input,
-        #contato form textarea {
-            background: rgba(255, 255, 255, 0.1);
-            border: none;
-            color: white;
-            padding: 0.8rem;
-            margin-bottom: 1rem;
-        }
-        #contato form input:focus,
-        #contato form textarea:focus {
-            outline: none;
-            border: 2px solid white;
-        }
-        #contato button {
-            background: #6c63ff;
-            color: white;
-            border: none;
-            padding: 0.7rem 1.5rem;
+        .skill:hover, .project:hover, .language:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
 
-        /* Footer */
+        .skill i, .language i {
+            font-size: 2rem;
+            color: #007bff;
+            margin-bottom: 0.5rem;
+        }
+
         footer {
-            background: #2c2c2c;
-            color: #bbb;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        footer a {
+            background: #343a40;
             color: white;
-            margin: 0 0.5rem;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
         }
-        footer a:hover {
-            color: #6c63ff;
+
+        a {
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
+    <!-- Cabeçalho -->
     <header>
-        <h1>Olikiver</h1>
-        <p>Desenvolvedor Full Stack | Soluções Modernas</p>
-        <a href="#contato">Entre em Contato</a>
+        <div class="container">
+            <h1>Portfólio de Olikiver</h1>
+            <p>Desenvolvedor Fullstack & Especialista em Customer Success</p>
+            <nav>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre Mim</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#experiencia">Experiência</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- About Section -->
-    <section id="sobre" class="container my-5">
-        <div class="row align-items-center">
-            <div class="col-md-6" data-aos="fade-right">
-                <h2>Sobre Mim</h2>
-                <p>Sou um desenvolvedor Full Stack dedicado a criar soluções tecnológicas modernas e escaláveis, com foco em usabilidade e inovação.</p>
-            </div>
-            <div class="col-md-6" data-aos="fade-left">
-                <img src="https://via.placeholder.com/500x300" alt="Olikiver">
-            </div>
+    <!-- Seção Sobre Mim -->
+    <section id="sobre">
+        <div class="container">
+            <h2 class="text-center">Sobre Mim</h2>
+            <p class="text-center">Sou um profissional com experiência em liderança de equipes, desenvolvimento fullstack e otimização de processos. Tenho paixão por criar soluções inovadoras e entregar resultados excepcionais.</p>
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Seção Habilidades -->
     <section id="habilidades">
-        <h2>Minhas Habilidades</h2>
-        <div class="container icon-grid">
-            <div data-aos="zoom-in"><i class="fab fa-html5"></i><p>HTML5</p></div>
-            <div data-aos="zoom-in" data-aos-delay="100"><i class="fab fa-css3-alt"></i><p>CSS3</p></div>
-            <div data-aos="zoom-in" data-aos-delay="200"><i class="fab fa-js"></i><p>JavaScript</p></div>
-            <div data-aos="zoom-in" data-aos-delay="300"><i class="fab fa-react"></i><p>React</p></div>
-            <div data-aos="zoom-in" data-aos-delay="400"><i class="fab fa-node"></i><p>Node.js</p></div>
-            <div data-aos="zoom-in" data-aos-delay="500"><i class="fas fa-database"></i><p>MongoDB</p></div>
-            <div data-aos="zoom-in" data-aos-delay="600"><i class="fab fa-git-alt"></i><p>Git</p></div>
-            <div data-aos="zoom-in" data-aos-delay="700"><i class="fab fa-docker"></i><p>Docker</p></div>
+        <div class="container">
+            <h2 class="text-center">Minhas Habilidades</h2>
+            <div class="skills">
+                <div class="skill">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <p>Criação de estruturas semânticas e responsivas.</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <p>Estilos modernos com animações e flexibilidade.</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Interatividade e lógica para web applications.</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                    <p>Desenvolvimento de interfaces dinâmicas e SPA.</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-node-js"></i>
+                    <h3>Node.js</h3>
+                    <p>Back-end escalável e APIs RESTful.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-database"></i>
+                    <h3>MongoDB & SQL</h3>
+                    <p>Gerenciamento eficiente de banco de dados.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Seção Experiência -->
+    <section id="experiencia">
+        <div class="container">
+            <h2 class="text-center">Experiência</h2>
+            <div>
+                <h3>Customer Success Team Leader</h3>
+                <p>Hostinger Brasil (2024 – Presente)</p>
+                <ul>
+                    <li>Liderei uma equipe global de 28 especialistas.</li>
+                    <li>Supervisionei o desempenho e garanti alta satisfação do cliente.</li>
+                    <li>Conquista: Aumentei a satisfação do cliente em 15%.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
     <section id="projetos">
         <div class="container">
-            <h2 class="text-center mb-5">Meus Projetos</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="project-card">
-                        <img src="https://via.placeholder.com/400x200" alt="Projeto">
-                        <div class="card-body">
-                            <h5>Projeto 1</h5>
-                            <p>Plataforma de gestão de tarefas com funcionalidades modernas.</p>
-                            <a href="#" class="btn">Ver Projeto</a>
-                        </div>
-                    </div>
+            <h2 class="text-center">Projetos</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Lista de Tarefas</h3>
+                    <a href="https://olikiverjesus.github.io/projetos/listadetarefas/" target="_blank">Veja o Projeto</a>
                 </div>
-                <div class="col-md-4">
-                    <div class
+                <div class="project">
+                    <h3>Conversor de Moedas</h3>
+                    <a href="https://olikiverjesus.github.io/projetos/conversordemoedas/" target="_blank">Veja o Projeto</a>
+                </div>
+                <div class="project">
+                    <h3>Dashboard de Finanças</h3>
+                    <a href="https://olikiverjesus.github.io/projetos/financaspessoais/" target="_blank">Veja o Projeto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato">
+        <div class="container">
+            <h2 class="text-center">Contato</h2>
+            <p class="text-center">Email: <a href="mailto:olikiversilva@gmail.com">olikiversilva@gmail.com</a></p>
+            <p class="text-center">LinkedIn: <a href="https://www.linkedin.com/in/olikiverjesus/" target="_blank">olikiverjesus</a></p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Portfólio de Olikiver</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
